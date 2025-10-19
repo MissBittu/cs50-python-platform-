@@ -1,4 +1,4 @@
-@"
+"
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -192,4 +192,5 @@ def get_stats(user_id: str):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
 "@ | Out-File -FilePath "main.py" -Encoding UTF8
